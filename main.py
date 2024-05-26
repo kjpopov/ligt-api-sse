@@ -6,11 +6,11 @@ app = FastAPI()
 @app.get("/hello")
 def hello():
     # Connect to the SQLite database
-    conn = sqlite3.connect('your_database.db')
+    conn = sqlite3.connect('light_api_database.db')
     cursor = conn.cursor()
 
     # Execute a query to fetch a word from the database
-    cursor.execute("SELECT word FROM your_table LIMIT 1")
+    cursor.execute("SELECT word FROM hello_table LIMIT 1")
     result = cursor.fetchone()
 
     # Close the database connection
