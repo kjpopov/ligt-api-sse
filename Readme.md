@@ -1,6 +1,6 @@
-# Light API
+# Light API and Live data stream
 
-Very light fast api on top of sql light database
+Very light fast api on top of sql light database, and live stream via SSE (server side events)
 
 ## Installation
 
